@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <blockquote>
+        <legend>Account details</legend>
+        <form action="form3.html" method="submit" class="pureform" style="background-color: rgb(180, 177, 177);" >
+        <fieldset>
+            <label for="banks">Choose bank</label>
+            <select name="banks" id="banks" required>
+                <option></option>
+                <option value="NepalBankLtd">Nepal Bank Ltd. (NBL)</option>
+                <option value="RastriyaBanijyaBank">Rastriya Banijya Bank. (RBB)</option>
+                <option value="Nabil Bank Ltd.">Nabil Bank Ltd.</option>
+                <option value="Nepal Investment Bank Ltd">Nepal Investment Bank Ltd. (NIBL)</option>
+                <option value="Standard Chartered Bank Nepal Ltd.">Standard Chartered Bank Nepal Ltd. (SCBNL)
+                </option>
+                <option value="Himalayan Bank Ltd.">Himalayan Bank Ltd. (HBL)</option>
+                <option value="Nepal SBI Bank Ltd. ">Nepal SBI Bank Ltd. (NSBI)</option>
+                <option value="Nepal Bangladesh Bank Ltd.">Nepal Bangladesh Bank Ltd. (NBB)
+                </option>
+                <option value="Everest Bank Ltd.">Everest Bank Ltd. (EBL)
+                </option>
+                <option value="Bank of Kathmandu Lumbini Ltd.">Bank of Kathmandu Lumbini Ltd. (BOK)
+                </option>
+                <option value="Nepal Credit and Commerce Bank Ltd.">Nepal Credit and Commerce Bank Ltd. (NCC)
+                </option>
+                <option value="NIC ASIA Bank Ltd.">NIC ASIA Bank Ltd. (NIC)
+                </option>
+                <option value="Machhapuchhre Bank Ltd.">Machhapuchhre Bank Ltd. (MBL)</option>
+                <option value="Kumari Bank Ltd.">Kumari Bank Ltd.</option>
+                <option value="Laxmi Bank Ltd.">Laxmi Bank Ltd.</option>
+                <option value="Siddhartha Bank Ltd.">Siddhartha Bank Ltd. (SBL)</option>
+                <option value="Agriculture Development Bank Ltd.">Agriculture Development Bank Ltd. (ADBNL)</option>
+                <option value="Global IME Bank Ltd.">Global IME Bank Ltd.</option>
+                <option value="Citizens Bank International Ltd.">Citizens Bank International Ltd.</option>
+                <option value="Prime Commercial Bank Ltd.">Prime Commercial Bank Ltd.</option>
+                <option value="Sunrise Bank Ltd. ">Sunrise Bank Ltd. </option>
+                <option value="NMB Bank Ltd.">NMB Bank Ltd.</option>
+                <option value="Prabhu Bank Ltd.">Prabhu Bank Ltd.</option>
+                <option value="Mega Bank Nepal Ltd. ">Mega Bank Nepal Ltd. </option>
+                <option value="Civil Bank Ltd.">Civil Bank Ltd.</option>
+                <option value="Century Commercial Bank Ltd.">Century Commercial Bank Ltd.</option>
+                <option value="Sanima Bank Ltd.">Sanima Bank Ltd.</option>
+            </select>
+            <br><br>
+            <label>account type</label> 
+            <label><input type="radio" name="account" required>current</label>&nbsp&nbsp 
+            <label><input type="radio" name="account" required>saving</label>&nbsp&nbsp
+            <label><input type="radio" name="account" required>credit</label>&nbsp&nbsp
+            <label><input type="radio" name="account" required>fixed-deposit</label>
+            <br><br>
+            <label for="name">account name</label>
+    <input type="text" placeholder="enter account name" id="name" required>&nbsp&nbsp 
+    <label for="branch">branch</label>
+    <input type="text" id="branch" placeholder="name of branch" required>  
+    <br><br>
+                <label for="accountnumber">account-number</label>
+                <input type="text" class="accountnumber" placeholder="180xxxxxxxxxx" id="accountnumber"minlength="13" max="20"  required>
+                &nbsp;&nbsp;
+                <label for="confirmnumber">Confirm account</label>
+                <input type="text" class="confirmnumber" id="confirmnumber" placeholder="180xxxxxxxxx" minlength="13" max="20" required>
+    
+                <!-- This is js for confirm account-number -->
+                <script>
+                            var account_number = document.getElementById("accountnumber")
+        , confirm_number = document.getElementById("confirmnumber");
+    
+      function validateAccount(){
+        if(account_number.value != confirm_number.value) {
+          confirm_number.setCustomValidity("account_number Don't Match");
+        } else {
+          confirm_number.setCustomValidity('');
+        }
+      }
+    
+      accoun_tnumber.onchange = validateAccount;
+      confirm_account.onkeyup = validateAccount;
+                </script>
+                <!-- End -->
+
+    <br><br>
+          <label for="BoId">Bo_id</label>
+          <input type="text" id="BOID" required minlength="10">
+          &nbsp&nbsp 
+          <label for="Crn">Crn_number</label>
+          <input type="text" inputmode="numeric" id="Crn" required>  
+<br><br>
+          <label>citizenship number</label>
+          <input type="text" placeholder="123-xx-xxxx" maxlength="20" required>
+<br><br><br>
+      
+            <button type="submit" class="purebutton" id="submit">submit</button>
+            </fieldset>
+        </form>
+    </blockquote>
+</body>
+</html>

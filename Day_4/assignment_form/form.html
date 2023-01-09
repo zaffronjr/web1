@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <blockquote>
+      <legend style="color: red;">Personal Information</legend>
+        <form style="color: black;" action="form2.html" method="submit" class="pureform" style="background-color: rgb(180, 177, 177);" >
+         <fieldset>
+            <label for="name">First-name</label  >
+            <input type="text" class="name" id="name" placeholder="Enter frst_name" maxlength="10" minlength="3" size="11" required >
+            &nbsp&nbsp
+            <label for="midname">Middle-name</label>
+            <input type="text" class="midname" id="midname" placeholder="Enter middle_name" maxlength="10" size="13">
+            &nbsp&nbsp 
+            <label for="lastname">Last-name</label>       
+            <input type="text" class="lastname" id="lastname" placeholder="Enter last_name" maxlength="20" minlength="5" size="10" required> 
+            <br><br><br>
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" id="DOB"  required> 
+            &nbsp&nbsp&nbsp 
+           <label for="marriage">Marital Status :</label>
+            <label><input type="checkbox" value="married" name="marriage" required>married</label>  
+            &nbsp;
+          <label><input type="checkbox" value="unmarried" name="marriage " required>unmarried</label>  
+            <br><br>
+            Gender <br>
+            <label><input type="radio" name="gender" required>Male</label>
+            <label><input type="radio" name="gender" required >Female</label>
+            <label><input type="radio" name="gender" required >Other</label>
+            <br><br><br>
+            
+            <label for="fathername">Father's name</label>
+            <input type="text" class="fathername" id="fathername" placeholder="Enter father name" required >
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp 
+            <label for="mothername">Mother's name</label>      
+            <input type="text" class="mothername" id="mothername" placeholder="Enter mother name"  required>
+            <br><br>
+            <label>Grandfather's name</label>
+            <label><input type="text" placeholder="Enter grandfather name" required></label>
+            &nbsp&nbsp
+            <label>Spouce's name</label>
+            <label><input type="text" name="spouce" placeholder="Enter spouce name"> </label>
+            <br><br><br>
+            
+            <label for="email">e-mail</label>
+            <input type="email" id="email" placeholder="someone@gmail.com" required >
+            &nbsp &nbsp
+            <label for="gmail">Confirm e-mail</label>
+            <input type="email" id="gmail" placeholder="someone@gmail.com" required >
+
+<!-- This is the js field for confirm email -->
+            <script>
+                 var email = document.getElementById("email")
+    , confirm_email = document.getElementById("gmail");
+
+  function validateemail(){    
+    if(email.value != confirm_email.value) {
+      confirm_email.setCustomValidity("e-mail don't match");
+    } else {
+      confirm_email.setCustomValidity('');
+    }
+  }
+
+  email.onchange = validateemail;
+  confirm_email.onkeyup = validateemail;
+            </script>
+            <!-- End -->
+
+        <br><br>     
+            <label for="password">Create Password</label>
+            <input type="password" class="password" id="password" placeholder="&*123Asdf" required>
+        &nbsp;&nbsp; 
+        <label for="confirm_password">Confirm Password</label>
+            <input type="password" class="password" id="confirm_password" placeholder="retype your password" required>
+
+            <!-- this is js for confirm password -->
+        <script>
+              var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirm_password");
+
+  function validatePassword(){
+    if(password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords Don't Match");
+    } else {
+      confirm_password.setCustomValidity('');
+    }
+  }
+
+  password.onchange = validatePassword;
+  confirm_password.onkeyup = validatePassword;
+        </script>
+        <!-- End -->
+
+        <br><br><br>
+            <label for="number" >Phone_No.</label>
+            <input type="tel" class="number" id="number" maxlength="16" value="+977-" required>
+            &nbsp&nbsp&nbsp
+            <label for="telephone">Telephone</label>
+            <input type="tel" class="telephone" id="telephone"  maxlength="10" >
+        <br><br>
+        <label for="address"></label>
+        <label>Country <input type="text" name="country" placeholder="Country name" required></label>&nbsp 
+        <label>Province_no. <input type="number" name="province" max="100" min="1" required></label>&nbsp 
+        <label>District <input type="text" name="district" placeholder="District name" required></label>
+<br><br>
+
+             <button type="submit" class="pure-button" id="submit"  > submit</button>
+    </fieldset>
+        </form>
+    </blockquote>
+</body>
+</html>

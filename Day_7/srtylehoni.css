@@ -1,0 +1,301 @@
+    body{ 
+        margin: 0;
+        padding: 0;
+
+    }
+    header{
+        
+        width: 100%;
+        color: hsl(0, 100%, 50%);
+        height: 8% ;     
+        background-color: rgba(234, 233, 233, 0.632);
+        position: fixed;
+        left: 12%;
+        z-index:1;
+        box-shadow: 0px 0px 2px black;
+
+
+    }
+
+    aside{
+        background-color: rgb(101, 86, 217);
+        height: 100%;
+       color: rgb(255, 255, 255);
+       padding: 6%;
+       position:fixed;
+       left: 0%;
+       z-index: 2;
+    }
+
+    footer{
+        background-color: rgb(255, 254, 254);
+        position:fixed;
+        height: 7%;
+        width: 100%;
+        bottom: 0;
+        left: 10%;
+        z-index: 1;
+        box-shadow: 0px 0px 1px black;
+
+    }
+
+    main{
+        background-color: rgb(255, 255, 255);
+       position:absolute;
+
+
+    }
+
+.icon{
+    margin-left: 1050px;
+    color: rgba(128, 128, 128, 0.37);
+    font-size: 22px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.bell{
+ color: rgba(128, 128, 128, 0.37);
+ font-size: 22px;
+ position: absolute;
+ bottom: 15px;
+ margin-left: 1000px;
+}
+
+
+.abhay{
+    color: black;
+    font-size: large;
+    font-family: monospace;
+    position:absolute;
+    margin-left: 1100px;
+    font-weight: 3px;
+    bottom: 20px;
+
+}
+
+.impdiv{
+    display: flex;
+}
+
+
+.division{
+    width: 57%;
+    background-color: rgba(222, 228, 228, 0.451);
+    height: 400px;
+margin-left: 30px;
+position: absolute;
+border-radius: 0.8ch;
+box-shadow: 0.8px 0.8px 0.8px black;
+}
+
+.division2{
+    height: 400px;
+    width: 24%;
+    margin-left:900px;
+    background-color: rgba(216, 214, 214, 0.249);
+    border-width: 2ch;
+    float: top;
+    position: absolute;
+    border-radius: 0.8ch;
+    box-shadow: 0.8px 0.8px 0.8px black;
+
+}
+
+input{
+min-width:320px;
+height: 35px;
+font-size: 20px;
+margin-top: 20px;
+border-radius: 0.8ch;
+margin-left: 60px;
+background-color: rgba(249, 249, 238, 0.592);
+}
+
+img{
+    width: 32px;
+    height: 32px;
+    border-radius: 20ch;
+    position: absolute;
+    top: 20px;
+    margin-left: 1200px;
+    bottom: 70px;
+    
+    
+}
+
+main{
+    background-color: rgba(241, 234, 234, 0.743);
+position:absolute;
+min-height:85%;
+ width:100%;
+ margin-top:4.8%;
+ margin-left: 12%;
+
+}
+
+form{
+    display: flex;
+}
+.dash{
+    margin-left: 40px;
+    top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    
+
+}
+
+.report{
+       margin-left:900px ;
+       width: 180px;
+       height: 35px;
+       background-color: rgb(86, 121, 237);
+       color: white;
+       border-radius: 0.8ch;
+       margin-top: 30px;
+       font-size: large;
+       font-weight: 2px;
+        
+        
+}
+
+
+.sb{
+    position: absolute;
+    left: 18px;
+    top: 5px;
+}
+
+hr{
+    color: white;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    border-bottom: 1px; 
+}
+
+h3{
+    position: absolute;
+    left: 20px;
+    top: 100px;
+}
+
+.interface{
+    position: absolute;
+    font-size: 11px;
+    top: 143px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.558);
+    font-weight:1px ;
+}
+
+strong{
+    position:absolute;
+    left: 20px;
+}
+
+.addons{
+    position: absolute;
+    font-size: 11px;
+    top: 288px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.558);
+    font-weight:1px ;
+}
+
+.button{
+    height: 35px;
+    width: 40px;
+    background-color: rgb(35, 172, 203);
+    color: white;
+    margin-top:18px;
+    border-radius: 2ch;
+    
+}
+
+.mbox1{
+background-color:rgb(45, 190, 45);
+width: 15px;
+height: 102px;
+border-top-left-radius: 0.8ch;
+border-bottom-left-radius: 0.8ch;
+margin-left: 30px;
+}
+
+.Box1{
+    height: 100px;
+    width: 300px;
+    background-color: whitesmoke;
+    position: absolute;
+    border-top-right-radius: 0.8ch;
+    border-bottom-right-radius: 0.8ch;
+    border-top-left-radius: 0.8ch;
+    border-bottom-left-radius: 0.8ch;
+    display: flex;
+    color: black;
+    margin-left: 6.7px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.maindiv{
+    margin-top:20px;
+    display: flex ;
+}
+
+.mbox2{
+    background-color:rgb(45, 190, 45);
+width: 15px;
+height: 102px;
+border-top-left-radius: 0.8ch;
+border-bottom-left-radius: 0.8ch;
+margin-left: 330px;
+}
+
+.Box2{
+    height: 100px;
+    width: 300px;
+    background-color: whitesmoke;
+    position: absolute;
+    border-top-right-radius: 0.8ch;
+    border-bottom-right-radius: 0.8ch;
+    border-top-left-radius: 0.8ch;
+    border-bottom-left-radius: 0.8ch;
+    display: flex;
+    color: black;
+    margin-left: 6.7px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.mbox3{
+    background-color:rgb(45, 190, 45);
+width: 15px;
+height: 102px;
+border-top-left-radius: 0.8ch;
+border-bottom-left-radius: 0.8ch;
+margin-left: 330px;
+}
+
+.Box3{
+    height: 100px;
+    width: 300px;
+    background-color: whitesmoke;
+    position: absolute;
+    border-top-right-radius: 0.8ch;
+    border-bottom-right-radius: 0.8ch;
+    border-top-left-radius: 0.8ch;
+    border-bottom-left-radius: 0.8ch;
+    display: flex;
+    color: black;
+    margin-left: 6.7px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.box4{
+    width: 120px;
+    height:10px;
+    margin-left: 80px;
+    margin-top: 60px;
+    background: linear-gradient(to right, rgb(69, 102, 233) 50%, rgba(128, 128, 128, 0.199) 50%);
+    border-radius: 0.8ch;
+}
